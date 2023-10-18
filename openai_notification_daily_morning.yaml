@@ -136,7 +136,7 @@ action:
       title: "{{ now().strftime('%A') }} Agenda"
       message: "{{ agent.response.speech.plain.speech }}"
   - alias: "Send notification - persistent notification"
-    service: notify.persistent_notification
+    service: persistent_notification.create
     data:
       title: "{{ now().strftime('%A') }} Agenda"
       message: "{{ agent.response.speech.plain.speech }}"
