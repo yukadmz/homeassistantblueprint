@@ -75,6 +75,8 @@ blueprint:
           - How much time remaining until their first meeting
           - Anything that may be special or unique, such as celebrating a birthday
 
+        Important note: the notification will be in French.
+
 trigger:
   platform: time
   at: !input notify_time
