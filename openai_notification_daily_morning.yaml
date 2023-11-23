@@ -133,15 +133,15 @@ action:
   - alias: "Send notification all services"
     service: !input notify_service
     data:
-      title: Agenda de {% set jours = ["Lundi",
+      title: "Agenda de {% set jours = ["Lundi",
     "Mardi","Mercredi","Jeudi","Vendredi","Samedi","Dimanche"] %}{{
-    jours[now().weekday()] }}
+    jours[now().weekday()] }}"
       message: "{{ agent.response.speech.plain.speech }}"
   - alias: "Send notification - persistent notification"
     service: persistent_notification.create
     data:
-      title: Agenda de {% set jours = ["Lundi",
+      title: "Agenda de {% set jours = ["Lundi",
     "Mardi","Mercredi","Jeudi","Vendredi","Samedi","Dimanche"] %}{{
-    jours[now().weekday()] }}
+    jours[now().weekday()] }}"
       message: "{{ agent.response.speech.plain.speech }}"
       notification_id: 8122
