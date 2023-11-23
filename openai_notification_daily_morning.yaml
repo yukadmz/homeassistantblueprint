@@ -133,7 +133,7 @@ action:
   - alias: "Send notification all services"
     service: !input notify_service
     data:
-      title: >-
+      title: |-
       "Agenda de {% set jours = ["Lundi",
       "Mardi","Mercredi","Jeudi","Vendredi","Samedi","Dimanche"] %}{{
       jours[now().weekday()] }}"
@@ -141,7 +141,7 @@ action:
   - alias: "Send notification - persistent notification"
     service: persistent_notification.create
     data:
-      title: >-
+      title: |-
       "Agenda de {% set jours = ["Lundi",
       "Mardi","Mercredi","Jeudi","Vendredi","Samedi","Dimanche"] %}{{
       jours[now().weekday()] }}"
