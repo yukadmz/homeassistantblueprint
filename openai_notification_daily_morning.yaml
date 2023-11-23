@@ -75,7 +75,7 @@ blueprint:
           - How much time remaining until their first meeting
           - Anything that may be special or unique, such as celebrating a birthday
 
-        Important note: the notification will be in French.
+        Important note: the notification must be written in French and will be sent to a mobile device, you must limit the number of characters in the message so that it is displayed correctly.
 
 trigger:
   platform: time
