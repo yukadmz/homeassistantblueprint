@@ -134,7 +134,7 @@ action:
           - No upcoming events.
         {%- endif %}
 
-        Closing blinds time: "{{ states(closingblinds_entity) }}"
+        Automatic blinds closing time automatically: "{{ states(closingblinds_entity) }}"
         
         {{ prompt }}
       agent_id: !input conversation_agent
